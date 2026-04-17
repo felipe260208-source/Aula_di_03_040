@@ -5,18 +5,26 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4; /*cor em hexadecimal*/
+    background-color: #838383; /*cor em hexadecimal*/
+    padding: 20px; /*alterei o padding 16/04*/
+    border-radius: 50px;
 }
 header{
     background-color: #c0c0c0;/*cinza cocô kkkk */
     color: #ffff; /*branco em hexadecimal*/
     text-align: center;/*centraliza o texto*/
+    border-radius: 50px;
 }
 nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
-    color: blue;
+    color: purple;
     text-decoration: none; /*tirei toda a decoração do texto*/
     padding: 4px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;/*radius é a borda arredondada*/
+    background-color: #cccc;
+    border-bottom-color: #d8d;
 }
+nav a:hover{color: red;}
 .bloco{ /*declaração de class, a class procede de "." */
     background-color: #cccc;
     color: black;
@@ -31,7 +39,7 @@ nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
     display: flex;
     flex-wrap: wrap;
     gap: 24px; /*espaço entre elementos dentro do id*/
-    justify-content: flex-start; /*reforçando que ele vai estar "flexível"*/
+    justify-content: center; /*centraliza horizontal*/ /*reforçando que ele vai estar "flexível"*/
     padding: 20px;
 
 }
@@ -42,7 +50,7 @@ nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
     box-shadow: 0 4px 10px #000000;
     width: 220px;/*largura*/
     text-align: center;/*alinhamento ao centro*/
-    border-radius: 4px;
+    border-radius: 40px;
 }
 
 .foto img{
@@ -50,4 +58,14 @@ nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
     height: 220px;
     object-fit: cover; /*efeito de sobrepor*/
     display: block;
+    border-radius: 40px;
+}
+.foto:hover{
+    transform: scale(2) rotate(5deg);
+}
+.legenda{
+    margin-top: 10px;
+    font-family: Courier New, Courier, 'monospace';
+    font-size: 20px;
+    font-style: italic;
 }
